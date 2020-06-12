@@ -2,7 +2,7 @@
 
 // If there is a duplicate of at least 2 within array we will print true, otherwise we will print false
 // instead of an array we can make an object and if the value is > 1 we would return true otherwise return false
-// Potential problem could be something like [1,3,2,1]
+// Potential problem could be something like [1,2,2,2]
 // 1: 1, 2: 3
 // 1 >= 2 return true
 
