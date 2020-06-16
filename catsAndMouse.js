@@ -24,17 +24,14 @@ x  y  z
 */
 
 function catAndMouse(x, y, z) {
-    let CatA = x;
-    let CatB = y;
-    let MouseC = z;
-    if (MouseC + 1 === CatB && MouseC - 1 === CatA) {
+    if(Math.abs(y-z)> Math.abs(x-z)){
+        return "Cat A"
+    }
+    else if(Math.abs(y-z)< Math.abs(x-z)){
+        return "Cat B"
+    }
+    else{
         return "Mouse C"
-    }
-    else if (MouseC + 1 === CatB || MouseC - 1 === CatB) {
-        return "Cat B";
-    }
-    else if (MouseC + 1 === CatA || MouseC - 1 === CatA) {
-        return "Cat A";
     }
 }
 
