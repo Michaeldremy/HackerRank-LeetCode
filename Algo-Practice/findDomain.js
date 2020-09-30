@@ -17,13 +17,13 @@ function getDomain(url) {
     }
     countStart = i;
   }
-  for (var i = 0; i < url.length; i++) {
-    console.log(url[i])
+  for (var j = 0; j < url.length; j++) {
+    console.log(url[j])
     console.log(countEnd);
-    if (url[i] === "." && url[i] + 1 === "c") {
+    if (url[j] === "." && url[j] + 1 === "c") {
       break;
     }
-    countEnd = i;
+    countEnd = j;
   }
   console.log(countStart, countEnd);
   var finalDomain = url.slice(countStart, countEnd);
