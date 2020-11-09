@@ -13,7 +13,7 @@
 //          i-1
 //              i+1
 
-var threeConsecutiveOdds = function(arr) {
+var threeConsecutiveOdds = function (arr) {
   if (arr.length === 0) {
     return false;
   }
@@ -26,4 +26,4 @@ var threeConsecutiveOdds = function(arr) {
   return false;
 };
 
-console.log(threeConsecutiveOdds([1,2,34,3,4,5,7,23,12]))
+console.log(threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]));
