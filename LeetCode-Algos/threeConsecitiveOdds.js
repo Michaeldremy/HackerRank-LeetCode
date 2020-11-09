@@ -2,11 +2,9 @@
 // Output: true
 // Explanation: [5,7,23] are three consecutive odds.
 
-// create solution = []
+// if arr length is equal to 0 return false
 // loop through our arr
-// if arr[i] is odd, check by doing modulus i % 2 === 1 then we will check for consective and then push into the solution array
-// else move i up by one
-// return solution
+// if arr[i - 1], arr[i], arr[i + 1] is odd, check by doing modulus i % 2 === 1 then we will check for consective, then return true
 
 // [1,2,34,3,4,5,7,23,12]
 //             i
