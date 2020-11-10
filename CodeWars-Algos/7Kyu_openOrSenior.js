@@ -13,4 +13,12 @@ function openOrSenior(data){
     }
   });
 }
-console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
+
+
+// refactored version with use of dectructoring our map
+// Since we are using ES6 arrow function we can immediately return rather than type a return statement
+// Notice we are also using the tenary operator
+const openOrSeniorRefactored = (data) => data.map(([age, handicap]) => age >= 55 && handicap > 7 ? "Senior" : "Open")
+
+console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
+console.log(openOrSeniorRefactored([[45, 12],[55,21],[19, -2],[104, 20]]));
