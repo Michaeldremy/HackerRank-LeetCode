@@ -4,14 +4,13 @@
 // maxDiff([1, 2, 3, -4]); //return 7, because 3 - (-4) == 7
 
 function maxDiff(list) {
-  if (list.length === 0) {
+  if (list.length <= 1) {
     return 0;
   }
 
   let sortedList = list.sort((a, b) => a - b);
-  let lastIndex = sortedList.length - 1;
 
-  return sortedList[lastIndex] - sortedList[0];
+  return sortedList[list.length - 1] - sortedList[0];
 };
 
 // refactored version
